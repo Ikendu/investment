@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/5108a58a34.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      div {
+        border: 3px solid #6c3425;
+        padding: 5px;
+      }
+
+      .img1 {
+        float: right;
+      }
+
+      .img2 {
+        float: right;
+      }
+
+      .clearfix {
+        overflow: auto;
+      }
+      h1,
+      p {
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Times New Roman", Times, serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        /* font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Brush Script MT', cursive; */
+        /* font-style: oblique; */
+        /* font-size: initial; */
+        font-weight: 800;
+      }
+      .para {
+        text-align: center;
+        font-variant: normal;
+      }
+      .icon {
+        width: 40px;
+      }
+      .parents {
+        display: flex;
+        gap: 20px;
+        text-decoration: none;
+      }
+      [name="search"] {
+        width: 25%;
+
+        background-image: url(search.png);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        transition: ease-in-out 2s;
+        transition: step-start;
+      }
+      [name="search"]:focus {
+        width: 50%;
+        background-color: rgb(200, 200, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home" target="_">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="active" href="#about"
+            >About <i class="fa-solid fa-cloud"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h1 class="parents">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+          /></svg
+        >We can code WELL
+      </h1>
+      <div>
+        <p class="para">How are u doing</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+  </body>
+</html>
