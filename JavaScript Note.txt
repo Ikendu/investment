@@ -1,0 +1,1 @@
+windows.print()		or 	print() invoke the printing option of the browser to print the page.
