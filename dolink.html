@@ -15,19 +15,38 @@
       <ul class="listitems">
         <li>cup</li>
         <li>pot</li>
-        <li>book</li>
+        <li id="book" onclick="changer()">book</li>
         <li id="pen" onclick="this.innerHTML = 'Beek'" style="cursor: pointer">
           pens
         </li>
+        <script>
+          document.write(3 + 4 + 6 + "10");
+        </script>
       </ul>
     </div>
     <div>
       <ul class="lists">
         <li>cup</li>
-        <li>pot</li>
+        <li onclick="document.write('Hello Black Pot')">pot</li>
         <li>book</li>
         <li>pen</li>
       </ul>
     </div>
+    <div id="insert"></div>
+    <script>
+      document.write("Hello Black Pot");
+    </script>
+    <script>
+      function changer() {
+        document.getElementById("book").innerHTML = "Im Changed";
+      }
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      Person.prototype.level = "7";
+      let details = new Person("Chima", 36);
+      document.getElementById("insert").innerHTML = Object.values(details);
+    </script>
   </body>
 </html>
