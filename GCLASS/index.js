@@ -1,5 +1,8 @@
 var intro = "Hello World I";
 
+let email = "";
+let passward = "";
+
 // console.log(intro);
 
 // alert(intro);
@@ -44,5 +47,72 @@ function printer() {
   console.log(idss);
   console.log(add);
 }
-let moreR = `here is the result before ${printer()}`;
-console.log(moreR);
+printer();
+
+function addNum(num1, num2) {
+  console.log("dihusdhisu");
+  console.log(num1 + num2);
+  return num1 + num2;
+}
+addNum(3, 6);
+// console.log(addNum(60, 4));
+let sum = 20 + addNum(40, 50);
+console.log(sum);
+
+function converting(num) {
+  let result = (5 / 9) * (num / 32);
+  return result;
+}
+console.log(converting(100));
+
+let david = {
+  first: "David",
+  last: "Peter",
+  age: 18,
+  level: "final Year",
+  regular: true,
+  otherDetal: { address: "UNN", status: "Unemployed", married: false },
+  fullName: function () {
+    return this.first + " " + this.last;
+  },
+};
+
+let emeka = {
+  first: "Emeka",
+  last: "Ani",
+  age: 20,
+  level: "3rd Year",
+  regular: false,
+  otherDetal: { address: "Hill Top", status: "Selfemployed", married: true },
+  fullName: function () {
+    return this.first + " " + this.last;
+  },
+};
+
+david.level = "First Year";
+
+console.log(david["regular"]);
+console.log(david.level);
+
+console.log(david["age"] + 100);
+
+console.log(david.otherDetal["address"]);
+console.log(david.otherDetal.address);
+console.log(david.fullName());
+
+console.log(Object.entries(david));
+
+function Student(name, age, level, address, employed) {
+  this.name = name;
+  this.myAge = age;
+  this.myLevel = level;
+  this.myAddress = address;
+  this.employed = employed;
+}
+
+let chinedu = new Student("Chinedu", 18, "2nd year", "Odim", false);
+let oluchi = new Student("Oluch", 23, "Final Year", "UNN", false);
+
+console.log(chinedu.name);
+console.log(chinedu.myAge);
+console.log(Student.name);
