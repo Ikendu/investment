@@ -47,4 +47,8 @@ console.log(Object.entries(fruits));
 let myString = "What level I'm I currently";
 console.log(myString.at(-3));
 let myArray = ["hello", 30, "mello", 10];
-console.log(myArray.at(-2));
+console.log(myArray.at(1));
+let newStr = myString.concat("hello", " More ", "helo");
+
+let padStr = myString.padStart(50, "dd");
+console.log(padStr);
