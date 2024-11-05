@@ -52,3 +52,7 @@ let newStr = myString.concat("hello", " More ", "helo");
 
 let padStr = myString.padStart(50, "dd");
 console.log(padStr);
+
+let text1 = "The rain in SPAIN stays mainly in the plain";
+let getter = text1.matchAll(/ain/g);
+console.log(Array.from(getter));
