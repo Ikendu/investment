@@ -63,3 +63,14 @@ console.log(get1);
 
 let x = 0.2 + 0.1;
 console.log(x);
+
+let fruity = ["Banana", "Orange", "Apple", "Mango"];
+
+let display = "<ul>";
+for (let idx = 0; idx < fruity.length; idx++) {
+  display += "<li>" + fruity[idx] + "</li>";
+}
+display += "<ul>";
+console.log(display);
+
+document.getElementById("display").innerHTML = display;
