@@ -60,3 +60,6 @@ console.log(Array.from(getter));
 
 let get1 = text1.includes("ain");
 console.log(get1);
+
+let x = 0.2 + 0.1;
+console.log(x);
