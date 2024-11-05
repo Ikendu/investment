@@ -116,3 +116,6 @@ let oluchi = new Student("Oluch", 23, "Final Year", "UNN", false);
 console.log(chinedu.name);
 console.log(chinedu.myAge);
 console.log(Student.name);
+
+// Event handling
+

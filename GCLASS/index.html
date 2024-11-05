@@ -10,8 +10,22 @@
     <div id="first">will be replaced</div>
     <div id="second"></div>
 
-    <script src="index.js"></script>
+    <button
+      onclick="this.innerText ='I am Clicked';
+      this.style.fontSize = '30px';
+      this.style.border = '2px solid blue';
+      this.style.backgroundColor = 'brown'
+      "
+    >
+      Click Me
+    </button>
 
+    <input
+      type="text"
+      onchange="this.style.backgroundColor='red'; this.style.color = 'white'"
+    />
+
+    <script src="index.js"></script>
     <!-- <script>
       document.write("Hello world, Welcome to your first programming language");
       console.log("Hello World");
