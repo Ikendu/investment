@@ -69,13 +69,11 @@ let converted = converter(100);
 console.log(converted);
 console.log(converter(300));
 
-let student1 = "Henry";
-let student2 = "Obi";
-let student3 = "Ada";
-let student4 = "Mercy";
-let student5 = "Wealth";
-
-console.log(student5);
+// let student1 = "Henry";
+// let student2 = "Obi";
+// let student3 = "Ada";
+// let student4 = "Mercy";
+// let student5 = "Wealth";
 
 let allStudent = {
   one: "Henry",
@@ -106,11 +104,61 @@ let person = {
   lastName: "Ani",
   height: 20,
   address: "Digital Dreams",
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
-  },
+};
+let person2 = {
+  firstName: "Peter",
+  lastName: "Ani",
+  height: 25,
+  address: "Digital Dreams",
+};
+let person3 = {
+  firstName: "Okey",
+  lastName: "Ike",
+  height: 23,
+  address: "Digital Dreams",
+};
+let person4 = {
+  firstName: "Emeka",
+  lastName: "Igwe",
+  height: 23,
+  address: "Digital Dreams",
 };
 
-console.log(person.firstName);
-console.log(person.height);
-console.log(person.fullName());
+// console.log(person.firstName);
+// console.log(person.height);
+// console.log(person.fullName());
+console.log("For loop  started");
+for (let x in person) {
+  console.log(person[x]);
+}
+
+function Person(firstName, lastName, age, address) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  this.address = address;
+  this.place = "Nigeria";
+}
+
+let student1 = new Person("Emeka", "Obi", 25, "UNN Nsukka, Enugu");
+let student2 = new Person("Uche", "Agbo", 18, "Digital Dreams");
+let student3 = new Person("Excel", "Akuoma", 24, "Uni Mart Nsk");
+let student4 = new Person("Emeka", "Obi", 25, "UNN Nsukka, Enugu");
+let student5 = new Person("Uche", "Agbo", 18, "Digital Dreams");
+let student6 = new Person("Excel", "Akuoma", 24, "Uni Mart Nsk");
+
+Person.prototype.continent = "Africa";
+student2.school = "Esut";
+
+console.log(student1.place);
+console.log(student6.continent);
+console.log(student2.school);
+
+let text = "Ajhgdoiufhdysiurhsiughdsiughuh";
+let padded = text.padEnd(100, "x");
+
+console.log(padded);
+
+let myString = "Uche, Agbo, 18, Digital, Dreams";
+myString = myString.split(",");
+console.log(myString);
