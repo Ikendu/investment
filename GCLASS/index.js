@@ -119,3 +119,21 @@ console.log(Student.name);
 
 // Event handling
 
+// String
+
+let surname = "Peter";
+
+let myName1 = "David is an instructor at digital dream" + " " + surname;
+
+let firstLetter = myName1[12];
+console.log(myName1.length);
+
+let myName2 = `David is an instructor at digital dream Peter`;
+console.log(myName2.toUpperCase());
+
+let sep = myName2.split(" ");
+console.log(sep);
+
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+console.log(index)
