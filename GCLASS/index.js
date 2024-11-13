@@ -128,12 +128,38 @@ let myName1 = "David is an instructor at digital dream" + " " + surname;
 let firstLetter = myName1[12];
 console.log(myName1.length);
 
-let myName2 = `David is an instructor at digital dream Peter`;
+let myName2 = `David is an, instructor at digital dream Peter`;
 console.log(myName2.toUpperCase());
 
 let sep = myName2.split(" ");
-console.log(sep);
+console.log(sep[7]);
 
-let text = "Please locate where 'locate' occurs!";
-let index = text.indexOf("locate");
-console.log(index)
+let text = "WhEre Please locate Where 'locate' occurs! where, WherE";
+let index = text.match(/ere/gi);
+console.log(index);
+if (text.includes("wheressss")) {
+  console.log("the string was found");
+} else {
+  console.log("Not found");
+}
+let deLength = text.length;
+console.log(deLength);
+
+let newStr = "hgbhihbihbifhbgfihbgijdfibihidhidfgbbhggigeuhg9ethugu9e";
+
+let newSlice = newStr.slice(-20, -5);
+console.log(newSlice);
+
+// let x = 0.2 + 0.1 + 10;
+// console.log(parseFloat(x.toFixed(3)) + 20);
+
+let cars = ["lexus", "Ikemba", "Jagua", "a", "Merc", "Toyota", 100];
+console.log(cars[3]);
+console.log(cars.length);
+console.log(cars[cars.length - 2]);
+console.log(cars.at(-2));
+console.log(cars);
+
+for (let i = 0; i < cars.length; i++) {
+  console.log(cars[i] + " Hello");
+}
