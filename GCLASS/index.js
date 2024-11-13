@@ -145,7 +145,7 @@ if (text.includes("wheressss")) {
 let deLength = text.length;
 console.log(deLength);
 
-let newStr = "hgbhihbihbifhbgfihbgijdfibihidhidfgbbhggigeuhg9ethugu9e";
+let newStr = "hgbhih bihbifhbgf ihbgijdfibihidh idfgbbhggige uhg9ethugu9e";
 
 let newSlice = newStr.slice(-20, -5);
 console.log(newSlice);
@@ -157,9 +157,47 @@ let cars = ["lexus", "Ikemba", "Jagua", "a", "Merc", "Toyota", 100];
 console.log(cars[3]);
 console.log(cars.length);
 console.log(cars[cars.length - 2]);
-console.log(cars.at(-2));
+console.log(cars.at(-1));
 console.log(cars);
+
+let shop = [
+  "shirts",
+  "trousers",
+  ["polo", "baggi", "shorts"],
+  "Inners",
+  "Babbies",
+];
 
 for (let i = 0; i < cars.length; i++) {
   console.log(cars[i] + " Hello");
 }
+
+console.log(shop[2][2]);
+
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits.push("cashew");
+fruits.push("cova");
+// fruits.pop();
+// fruits.pop();
+
+fruits.unshift("Pawpaw");
+// fruits.shift();
+let arrJoin = fruits.join(" * ");
+console.log(arrJoin);
+
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+let myKids = myBoys.concat(myGirls, fruits);
+myKids = myKids.join(" ");
+console.log(myBoys);
+
+// let result = fruits.copyWithin(2, 1);
+console.log(myKids);
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+let myfruit = fruits.toSpliced(2);
+
+console.log("myFruits ", myfruit);
+console.log("Fruits", fruits);
+console.log(fruits.indexOf("Orange"));
