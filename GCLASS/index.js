@@ -201,3 +201,65 @@ let myfruit = fruits.toSpliced(2);
 console.log("myFruits ", myfruit);
 console.log("Fruits", fruits);
 console.log(fruits.indexOf("Orange"));
+
+// fruits.sort();
+// fruits.reverse();
+
+let sorted = fruits.toSorted();
+console.log(sorted);
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort((x, y) => x - y);
+console.log(points.at(-2));
+console.log(Math.min.apply(null, points));
+
+cars = [
+  { type: "Volvo", year: 2016 },
+  { type: "Saab", year: 2001 },
+  { type: "BMW", year: 2010 },
+];
+
+cars.sort((a, b) => a - b);
+console.log(cars);
+
+// let changed = [];
+
+// points.ma((x, idx, arr) => {
+//   changed.push((x += idx));
+// });
+
+let changed = points.map((x, idx, arr) => {
+  return (x += idx);
+});
+
+console.log(changed);
+const myArr = [1, 2, 3, 4, 5, 6];
+const newArr = myArr.flatMap((x) => x * 2);
+console.log(newArr);
+
+let points1 = [40, 100, 1, 5, 25, 10];
+
+let lessNum = points1.filter((x) => x > 25);
+console.log(lessNum);
+
+let finalResult = points1.reduce((result, value) => result + value);
+
+let bool = points1.some((value) => value > 50);
+
+console.log(bool);
+
+let strings = "ada, obi, nneka, ekene";
+
+let names = Array.from(strings);
+
+const keys = points1.keys();
+console.log(keys);
+
+const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+console.log(year);
+console.log([...q1, "ap", "may"]);
