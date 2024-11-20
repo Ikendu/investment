@@ -263,3 +263,55 @@ const q4 = ["Oct", "Nov", "May"];
 const year = [...q1, ...q2, ...q3, ...q4];
 console.log(year);
 console.log([...q1, "ap", "may"]);
+
+let myDate = new Date();
+
+let myDays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let myMonth = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+// let getter = myDate.getDay();
+// let month = myDate.getMonth();
+// console.log(getter);
+// console.log(myDays[getter]);
+// console.log(month);
+// console.log(myMonth[month]);
+
+let curr = new Date();
+
+console.log(curr);
+
+// let changedDate = curr.setFullYear(2020);
+// console.log(new Date(changedDate));
+
+curr.setDate(10);
+console.log(curr);
+
+curr.setMinutes(6);
+
+let radius = 20;
+let result1 = Math.PI * radius;
+console.log(result1);
+console.log(Math.round(10.9));
+
+const result2 = Math.random() * 100;
+console.log(result2);
