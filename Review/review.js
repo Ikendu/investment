@@ -66,11 +66,14 @@ console.log(x);
 
 let fruity = ["Banana", "Orange", "Apple", "Mango"];
 
-let display = "<ul>";
-for (let idx = 0; idx < fruity.length; idx++) {
-  display += "<li>" + fruity[idx] + "</li>";
-}
-display += "<ul>";
-console.log(display);
+// let display = "<ul>";
+// for (let idx = 0; idx < fruity.length; idx++) {
+//   display += "<li>" + fruity[idx] + "</li>";
+// }
+// display += "<ul>";
+// console.log(display);
 
-document.getElementById("display").innerHTML = display;
+// document.getElementById("display").innerHTML = display;
+
+const date = new Date();
+console.log(date.getUTCDay());
