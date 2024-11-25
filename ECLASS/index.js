@@ -159,6 +159,33 @@ let padded = text.padEnd(100, "x");
 
 console.log(padded);
 
-let myString = "Uche, Agbo, 18, Digital, Dreams";
-myString = myString.split(",");
+let myString = `Uche A'gbo 18 pause "He is ynung" Digi\'tal hes heees HesDreams `;
+// myString = myString.split(" ");
 console.log(myString);
+let returns = myString.indexOf("Digit");
+// console.log(returns);
+
+if (myString.includes("pause")) {
+  console.log("A block of code is running, the  movie is paused");
+  console.log("A block of code is running, the  movie is paused");
+  console.log("A block of code is running, the  movie is paused");
+} else {
+  console.log("The content is not present");
+}
+
+let searchResult = myString.match(/he/gi);
+console.log(searchResult);
+
+let x = "10";
+let y = "20";
+let z = x / y;
+console.log(z);
+num = 20;
+
+console.log(num.toFixed(6));
+
+x = "abc";
+y = "20";
+
+console.log(Number.MIN_VALUE);
+console.log(Number(y) + 10);
