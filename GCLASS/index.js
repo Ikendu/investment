@@ -315,3 +315,89 @@ console.log(Math.round(10.9));
 
 const result2 = Math.random() * 100;
 console.log(result2);
+
+let no = "0";
+let x = "3";
+let z = "5";
+let y = "3";
+
+console.log((x / z) * y);
+
+if (x < z) {
+  console.log("free ride coding");
+  console.log("Straignt forward coding");
+  console.log("From top to down coding");
+}
+
+if (y > z) {
+  console.log("free ride coding");
+  console.log("Straignt forward coding");
+  console.log("From top to down coding");
+} else {
+  console.log("Not free ride coding");
+  console.log("Not Straignt forward coding");
+  console.log("Not From top to down coding");
+}
+
+if (y > z) {
+  console.log("free ride coding");
+  console.log("Straignt forward coding");
+  console.log("From top to down coding");
+} else if (y == z) {
+  console.log("free ride coding111");
+  console.log("Straignt forward coding111");
+  console.log("From top to down coding111");
+} else if (y > z) {
+  console.log("free ride coding222");
+  console.log("Straignt forward coding22");
+  console.log("From top to down coding222");
+} else if (y >= z) {
+  console.log("free ride coding223");
+  console.log("Straignt forward coding223");
+  console.log("From top to down coding2223");
+} else {
+  console.log("free ride coding2224");
+  console.log("Straignt forward coding224");
+  console.log("From top to down coding2224");
+}
+
+let classDate = new Date();
+let today = classDate.getDay();
+let dayName = "";
+console.log(today);
+console.log(dayName);
+
+switch (today) {
+  case 0: dayName = "Sunday"; break;
+  case 1: dayName = "Monday"; break;
+  case 2: dayName = "Tuesday"; break;
+  case 3: dayName = "Wednesday"; break
+  case 4: dayName = "Thurday"; break
+  case 5: dayName = "Friday"; break
+  case 6: dayName = "Saturday"; break
+  default: dayName = "invalid"
+}
+
+// if (today == 0) {
+//   dayName = "Sunday";
+// } else if (today == 1) {
+//   dayName = "Monday";
+// } else if (today == 2) {
+//   dayName = "Tuesday";
+// } else if (today == 3) {
+//   dayName = "Wednesday";
+// } else if (today == 4) {
+//   dayName = "Thursday";
+// } else if (today == 5) {
+//   dayName = "Friday";
+// } else if (today == 6) {
+//   dayName = "Saturday";
+// } else {
+//   dayName = "Invalid";
+// }
+
+console.log(dayName);
+
+console.log(new Date());
+
+console.log("Contnue other codes");
