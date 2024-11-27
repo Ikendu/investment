@@ -368,14 +368,29 @@ console.log(today);
 console.log(dayName);
 
 switch (today) {
-  case 0: dayName = "Sunday"; break;
-  case 1: dayName = "Monday"; break;
-  case 2: dayName = "Tuesday"; break;
-  case 3: dayName = "Wednesday"; break
-  case 4: dayName = "Thurday"; break
-  case 5: dayName = "Friday"; break
-  case 6: dayName = "Saturday"; break
-  default: dayName = "invalid"
+  case 0:
+    dayName = "Sunday";
+    break;
+  case 1:
+    dayName = "Monday";
+    break;
+  case 2:
+    dayName = "Tuesday";
+    break;
+  case 3:
+    dayName = "Wednesday";
+    break;
+  case 4:
+    dayName = "Thurday";
+    break;
+  case 5:
+    dayName = "Friday";
+    break;
+  case 6:
+    dayName = "Saturday";
+    break;
+  default:
+    dayName = "invalid";
 }
 
 // if (today == 0) {
@@ -401,3 +416,47 @@ console.log(dayName);
 console.log(new Date());
 
 console.log("Contnue other codes");
+
+// console.log("1: ", dayName);
+// console.log("2: ", dayName);
+// console.log("3: ", dayName);
+// console.log("4: ", dayName);
+// console.log("5: ", dayName);
+
+let days = [
+  "Monday",
+  "Tuesday",
+  "wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+  "Moreday",
+  "Nextday",
+];
+
+for (let i = 0; i < days.length; i++) {
+  let num = i + 1;
+  console.log(num + ": ", days[i]);
+}
+console.log("......................");
+
+let num = 1;
+for (let i of days) {
+  console.log(i);
+}
+
+days.forEach((x, i) => {
+  console.log(i + 1 + "...", x);
+});
+
+for (let i = 0; i < days.length; i++) {
+  let num = i + 1;
+  console.log(num + ": ", days[i]);
+}
+
+let i = 0;
+while (i < days.length) {
+  console.log(i + 1, days[i]);
+  i++;
+}
