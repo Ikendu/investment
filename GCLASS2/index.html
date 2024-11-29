@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header" onclick="this.innerHTML = 'I have finally changed'">
+      Change me
+    </h1>
+
+    <h2 id="demo">Another smaller header</h2>
+
+    <button onclick="changer()">changer</button>
+
+    <button onclick="document.write('I have also changed')">Click me</button>
+
+    <script>
+      function changer() {
+        document.getElementById("demo").style.fontSize = "50px";
+        document.getElementById("demo").style.backgroundColor = "blue";
+        document.getElementById("demo").style.padding = "30px";
+        document.getElementById("demo").innerText = "I can also change";
+      }
+      alert("Hello you are welcome to javascript class");
+      document.write("Big man");
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
