@@ -189,3 +189,43 @@ y = "20";
 
 console.log(Number.MIN_VALUE);
 console.log(Number(y) + 10);
+
+let name = "Chidi";
+let name1 = "Joy";
+let name2 = "Chika";
+let name3 = "Joyce";
+let name4 = "Mike";
+
+let names = ["Chris", "Chika", "Mike", "Mila", "Ken", "Oge", "Ada", 50, 20];
+console.log(name1);
+console.log(names[3]);
+console.log(names.length);
+// indexOf("Mila");
+console.log(names.indexOf("Mila") + 1);
+
+let students = [];
+students[0] = "Cola";
+students[1] = "Mala";
+students[10] = "jola";
+names.pop();
+names.pop();
+names.push("Lisa");
+names.shift();
+names.unshift("Bola");
+console.log(names);
+
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+
+// }
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myChildren = arr3.concat(arr1, arr2);
+console.log(myChildren);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits);
+let newBasket = fruits.slice(1, 4);
+console.log(newBasket);

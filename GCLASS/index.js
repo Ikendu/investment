@@ -460,3 +460,69 @@ while (i < days.length) {
   console.log(i + 1, days[i]);
   i++;
 }
+
+for (let i = 0; i < days.length; i++) {
+  if (i == 2) {
+    continue;
+  }
+  console.log(days[i]);
+}
+
+let myset = [];
+
+myset.push("Maggi");
+myset.push("Salt");
+myset.push("Sugga");
+myset.push("Maggi");
+myset.push("Gala");
+myset.push("Sugga");
+
+let myRealSet = new Set(myset);
+
+console.log(myset);
+console.log(myRealSet);
+console.log(myRealSet instanceof Set);
+
+david = {
+  first: "David",
+  last: "Peter",
+  age: 18,
+  level: "final Year",
+  regular: true,
+  otherDetal: { address: "UNN", status: "Unemployed", married: false },
+  fullName: function () {
+    return this.first + " " + this.last;
+  },
+};
+let { otherDetal, regular, level } = david;
+console.log(otherDetal);
+
+days = [
+  "Monday",
+  "Tuesday",
+  "wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+  "Moreday",
+  "Nextday",
+];
+
+let [a, , , , , , , , d] = days;
+
+function divider(a, b) {
+  console.log(a / b);
+  return a / b;
+}
+
+console.log("Trying something");
+divider(0, 10);
+
+try {
+  console.log(ranger);
+} catch (err) {
+  console.log(err.message);
+}
+console.log("Trying other things");
+console.log("More function after trying");

@@ -77,3 +77,11 @@ let fruity = ["Banana", "Orange", "Apple", "Mango"];
 
 const date = new Date();
 console.log(date.getUTCDay());
+Number("3.14");
+Number(Math.PI);
+Number(" ");
+Number("");
+
+Number("99 88");
+Number("John");
+console.log(parseFloat("40.0"));
