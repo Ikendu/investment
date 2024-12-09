@@ -49,11 +49,6 @@ function toCelsius(fahrenheit) {
 
 console.log(toCelsius(40).toFixed(4));
 
-let animal = { part1: "head", part2: "hand", part3: "leg" };
-
-console.log(animal.part1);
-console.log(animal.part3);
-
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -76,3 +71,33 @@ console.log(person.fullName());
 let person1 = JSON.stringify(person);
 
 console.log(person.firstName);
+
+let mystaffdesc = 'Okolo\'s "can u see" we are here';
+console.log(mystaffdesc);
+
+let temp = `this is my template's "string" or ${mystaffdesc} characters`;
+console.log(temp.length);
+
+num1 = "20.901";
+num2 = "40";
+num3 = 10.66377567646265765846982628526;
+
+console.log(parseFloat(num1));
+
+let animal = { part1: "head", part2: "hand", part3: "leg" };
+
+console.log(animal["part1"]);
+console.log(animal.part3);
+
+let animals = ["Hen", "Goat", "Dog", "Cow"];
+
+// animals[2] = "Lion";
+// let minused = animals.pop();
+// animals.shift();
+
+console.log(animals.sort());
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort((a, b) => b - a);
+
+console.log(points);
