@@ -25,12 +25,16 @@
       onchange="this.style.backgroundColor='red'; this.style.color = 'white'"
     />
 
-    <script src="index.js"></script>
-    <!-- <script>
+    <h1 onclick="handleChange()" id="scope">Change Scope</h1>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="app.js"></script>
+
+    <script>
       document.write("Hello world, Welcome to your first programming language");
       console.log("Hello World");
-        alert("Successfully sent");
+      // alert("Successfully sent");
       document.getElementById("first").innerText = 10;
-    </script> -->
+    </script>
   </body>
 </html>

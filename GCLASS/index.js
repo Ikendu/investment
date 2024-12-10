@@ -1,3 +1,4 @@
+
 var intro = "Hello World I";
 
 let email = "";
@@ -526,3 +527,15 @@ try {
 }
 console.log("Trying other things");
 console.log("More function after trying");
+
+let myItems = "All Items";
+
+function message() {
+  const name = "Jesse";
+  const age = 40;
+  return name + " is " + age + "years old.";
+}
+
+// export default message;
+
+

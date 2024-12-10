@@ -1,26 +1,18 @@
-// let Philip = 'A student of Digital" Dreams';
-let myName = "Philip";
+// import message from "./index";
 
-console.log(myName);
+newitem = 20;
 
-let num1 = 4;
-let num2 = 20;
-let num3 = 10;
-let num4 = 2;
+function changer() {
+  let newitem = 40;
+  console.log(newitem);
+}
 
-let fullName = `${myName} Ogbu is ${num2} years old`;
+changer();
 
-let hisName = myName + " Ogbu is " + num2 + " years old";
+// console.log(newitem);
 
-console.log(fullName);
-console.log(hisName);
-num1++;
-num1 = num1 + 2;
-num1 += 2;
+// function handleChange() {
+//   document.getElementById("scope").innerHTML = myItems;
+// }
 
-let text1 = 386;
-let text2 = 4;
-
-let result = text1 == text2;
-
-console.log(result);
+message();
