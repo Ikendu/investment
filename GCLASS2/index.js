@@ -101,3 +101,78 @@ const points = [40, 100, 1, 5, 25, 10];
 points.sort((a, b) => b - a);
 
 console.log(points);
+
+let val = 10;
+
+if (val > 11) {
+  console.log("It is greater");
+} else if (val == 9) {
+  console.log("It is eqaul");
+} else if (val <= 9) {
+  console.log("Is is close enough");
+} else if (val >= 100) {
+  console.log("It is on the higher side");
+} else {
+  console.log("At least we have an output");
+}
+
+// console.log(new Date().getDay());
+// for (let i = 0; i < 10; i++) {
+//   if (val == 11) {
+//     console.log(Math.floor(Math.random() * 11));
+//   }
+// }
+
+let today = new Date().getDay();
+
+let showDay = "";
+
+// switch (today) {
+//   case 0:
+//     showDay = "Sunday";
+//     break;
+//   case 1:
+//     showDay = "Monday";
+//     break;
+//   case 2:
+//     showDay = "Tuesday";
+//     break;
+//   case 3:
+//     showDay = "Wednesday";
+//     break;
+//   case 4:
+//     showDay = "Thursday";
+//     break;
+//   case 5:
+//     showDay = "Friday";
+//     break;
+//   case 6:
+//     showDay = "Saturday";
+// }
+
+if (today == 0) {
+  showDay = "Sunday";
+} else if (today == 1) {
+  showDay = "Monday";
+} else if (today == 2) {
+  showDay = "Tuesday";
+} else if (today == 3) {
+  showDay = "Wednesday";
+} else if (today == 4) {
+  showDay = "Thursday";
+} else if (today == 5) {
+  showDay = "Friday1";
+} else if (today == 6) {
+  showDay = "Saturday";
+}
+
+for (let abc = 0; abc < 10; abc++) {
+  let append = "";
+
+  if (abc == 0) append = "st";
+  else if (abc == 1) append = "nd";
+  else if (abc == 2) append = "rd";
+  else append = "th";
+  
+  console.log(abc + 1 + append, "time I print", showDay);
+}
